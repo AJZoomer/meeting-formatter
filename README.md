@@ -1,4 +1,5 @@
 # Meeting Formatter
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/AJZoomer/meeting-formatter)
 
 Meeting Formatter is a small desktop tool that cleans up messy meeting notes and turns them into something readable. It runs locally, doesn’t send anything anywhere, and is basically just a quick way to tidy up agendas, minutes, brainstorm dumps, or whatever else you throw at it.
 
