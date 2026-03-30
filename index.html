@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Meeting Formatter</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- jsPDF for PDF generation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <main id="app">
+    <h1>Meeting Formatter</h1>
+
+    <section id="controls">
+      <div class="field">
+        <label for="mode">Mode</label>
+        <select id="mode">
+          <option value="agenda">Meeting Agenda</option>
+          <option value="minutes">Meeting Minutes</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="outputType">Output type</label>
+        <select id="outputType">
+          <option value="txt">.txt</option>
+          <option value="md">.md</option>
+          <option value="pdf">.pdf</option>
+        </select>
+      </div>
+    </section>
+
+    <section id="io">
+      <div class="panel">
+        <h2>Input</h2>
+        <textarea id="input" placeholder="Paste your raw notes here..."></textarea>
+      </div>
+
+      <div class="panel">
+        <h2>Output</h2>
+        <textarea id="output" readonly placeholder="Formatted output will appear here..."></textarea>
+
+        <div id="outputActions">
+          <button id="formatBtn">Format</button>
+          <button id="copyBtn">Copy</button>
+          <button id="clearBtn">Clear</button>
+          <a id="downloadLink" href="#" download style="display:none;">Download</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Popup -->
+  <div id="copyPopup">Copied to clipboard!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
