@@ -1,0 +1,6 @@
+build the .exe files with this command:
+cd "dev tools"
+python builder.py
+python installer_builder.py
+
+change version in installer_builder.py
