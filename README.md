@@ -11,7 +11,6 @@ Meeting Formatter is a small desktop tool that cleans up messy meeting notes and
 - Fully offline
 - Simple UI: paste → format → copy
 - Can export the formatted output as **.txt**, **.md**, or **.pdf**
-- Available as an installer or a portable version
 
 ## Installation and Uninstallation
 
